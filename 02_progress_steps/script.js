@@ -1,7 +1,7 @@
-progress = document.getElementById("progress")
-circles = document.querySelectorAll(".circle")
-prev = document.getElementById("prev")
-next = document.getElementById("next")
+const progress = document.getElementById("progress")
+const  circles = document.querySelectorAll(".circle")
+const  prev = document.getElementById("prev")
+const next = document.getElementById("next")
 
 
 let currentActive = 1
@@ -34,7 +34,7 @@ function update() {
         if(idx < currentActive) {
             circle.classList.add('active')
         } else {
-            circle.classList.remove('remove')
+            circle.classList.remove('active')
         }
     });
 }
@@ -51,5 +51,3 @@ if(currentActive === 1) {
     prev.disabled = false;
     next.disabled = false;
 }
-
-console.log(currentActive)
