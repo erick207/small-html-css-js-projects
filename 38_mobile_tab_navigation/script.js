@@ -1,5 +1,5 @@
 const contentEls = document.querySelectorAll('.content')
-const liEls = document.querySelectorAll('li')
+const liEls = document.querySelectorAll('nav ul li')
 
 liEls.forEach((liEl, idx) => 
     liEl.addEventListener('click', () => {
